@@ -104,6 +104,7 @@ public class NettyClient {
                 if (!SessionUtil.hasLogin(channel)) {
                     loginConsoleCommand.exec(scanner, channel);
                 } else {
+                    System.out.println("请输入指令:[sendToUser/logout/createGroup/joinGroup/quitGroup/listGroupMembers/sendToGroup]");
                     consoleCommandManager.exec(scanner, channel);
                 }
             }

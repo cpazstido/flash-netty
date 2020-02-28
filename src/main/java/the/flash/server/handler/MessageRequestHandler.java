@@ -44,7 +44,8 @@ public class MessageRequestHandler extends SimpleChannelInboundHandler<MessageRe
             });
         } else {
             System.err.println("[" + session.getUserId() + "] 不在线，发送失败!");
-
+            messageResponsePacket.setMessage("[" + session.getUserId() + "] 不在线，发送失败!");
+            ctx.channel().writeAndFlush(messageResponsePacket);
         }
     }
 }
