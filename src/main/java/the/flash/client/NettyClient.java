@@ -26,8 +26,8 @@ import java.util.concurrent.TimeUnit;
  */
 public class NettyClient {
     private static final int MAX_RETRY = 5;
-    private static final String HOST = "127.0.0.1";
-    private static final int PORT = 8000;
+    private static final String HOST = "10.10.1.79";
+    private static final int PORT = 8080;
 
 
     public static void main(String[] args) {
